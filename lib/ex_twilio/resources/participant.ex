@@ -2,7 +2,7 @@ defmodule ExTwilio.Participant do
   @moduledoc """
   Represents a Participant resource in the Twilio API.
 
-  - [Twilio docs](https://www.twilio.com/docs/voice/api/conference-participant-resource)
+  - [Twilio docs](https://www.twilio.com/docs/conversations/api/conversation-participant-resource)
 
   ## Examples
 
@@ -13,20 +13,18 @@ defmodule ExTwilio.Participant do
 
   """
 
-  defstruct call_sid: nil,
-            conference_sid: nil,
+  defstruct account_sid: nil,
+            conversation_sid: nil,
+            sid: nil,
+            identity: nil,
+            attributes: nil,
+            messaging_binding: nil,
+            role_sid: nil,
             date_created: nil,
             date_updated: nil,
-            account_sid: nil,
-            muted: nil,
-            start_conference_on_enter: nil,
-            end_conference_on_exit: nil,
-            uri: nil,
-            label: nil,
-            call_sid_to_coach: nil,
-            coaching: nil,
-            hold: nil,
-            status: nil
+            url: nil,
+            last_read_message_index: nil,
+            last_read_timestamp: nil
 
   use ExTwilio.Resource, import: [:stream, :all, :find, :update, :create, :destroy]
 
