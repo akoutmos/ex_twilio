@@ -17,7 +17,9 @@ defmodule ExTwilio.Conversation.Webhook do
   use ExTwilio.Resource,
     import: [
       :all,
-      :stream
+      :stream,
+      :create,
+      :destroy
     ]
 
   def parents,

@@ -23,7 +23,8 @@ defmodule ExTwilio.Conversation.Conversation do
     import: [
       :all,
       :stream,
-      :create
+      :create,
+      :destroy
     ]
 
   def parents,
