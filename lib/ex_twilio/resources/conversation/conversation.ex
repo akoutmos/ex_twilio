@@ -24,6 +24,7 @@ defmodule ExTwilio.Conversation.Conversation do
       :all,
       :stream,
       :create,
+      :find,
       :destroy
     ]
 
