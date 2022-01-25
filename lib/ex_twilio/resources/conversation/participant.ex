@@ -23,6 +23,7 @@ defmodule ExTwilio.Conversation.Participant do
       :all,
       :stream,
       :create,
+      :find,
       :destroy
     ]
 
