@@ -1,4 +1,4 @@
-defmodule ExTwilio.Conversation.MessageReceipt do
+defmodule ExTwilio.Conversation.Receipt do
   @moduledoc """
   Represents a Participant resource for a message scoped receipt.
 
@@ -20,7 +20,8 @@ defmodule ExTwilio.Conversation.MessageReceipt do
   use ExTwilio.Resource,
     import: [
       :all,
-      :stream
+      :stream,
+      :find
     ]
 
   def parents,

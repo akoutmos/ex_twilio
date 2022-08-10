@@ -24,7 +24,8 @@ defmodule ExTwilio.Conversation.Message do
     import: [
       :all,
       :stream,
-      :create
+      :create,
+      :find
     ]
 
   def parents,
