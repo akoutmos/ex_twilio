@@ -19,7 +19,8 @@ defmodule ExTwilio.Conversation.Webhook do
       :all,
       :stream,
       :create,
-      :destroy
+      :destroy,
+      :update
     ]
 
   def parents,
